@@ -29,13 +29,13 @@ class ClienteUtilsTest {
 
     @Test
     void getClientsQuantity() {
-        assertEquals(ClienteUtils.getClientsQuantity(clientes), 4);
+        assertEquals(4, ClienteUtils.getClientsQuantity(clientes));
     }
 
     @Test
     void getClientsQuantityArray() {
         Cliente[] clienteArray = clientes.toArray(new Cliente[0]);
 
-        assertEquals(ClienteUtils.getClientsQuantity(clienteArray), 4);
+        assertEquals(4, ClienteUtils.getClientsQuantity(clienteArray));
     }
 }
